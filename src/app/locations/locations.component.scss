@@ -1,0 +1,22 @@
+.locations-title {
+  font-size: 60px;
+}
+
+.location-img {
+  width: 100%;
+}
+
+.favloc-btn {
+  background-color: rgb(255, 212, 255);
+  border: 2px solid purple;;
+  margin: 0 0 15px 0;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.favloc-btn:hover {
+  background-color: purple;
+  color: white;
+}

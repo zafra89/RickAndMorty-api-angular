@@ -1,0 +1,13 @@
+<h1 class="characters-title">List of Characters</h1>
+<app-reactive-form (searchCharacter)="searchCharacter($event)" (searchSpecies)="searchSpecies($event)"></app-reactive-form>
+<div class="divfather container">
+  <div class="row">
+    <div class="divson col-lg-4 col-md-6 col-sm-12" *ngFor="let character of characters">
+      <a routerLink="/characters/{{ character.id }}">
+        <img class="imgcharacter" src="{{ character.image }}">
+        <h3 class="namecharacter">{{ character.name | mypipe: 'Morty':'*' }}</h3>
+      </a>
+      <button class="favchar-btn" (click)="addNewFavouriteCharacter(character)">Add to Favs</button>
+    </div>
+  </div>
+</div>

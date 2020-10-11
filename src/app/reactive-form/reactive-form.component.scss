@@ -1,0 +1,27 @@
+.search-form {
+  margin-bottom: 25px;
+}
+
+.name-input, .species-input {
+  background-color: white;
+  text-align: left;
+  font-size: 20px;
+  height: 28px;
+  width: 250px;
+}
+
+.name-input:focus, .species-input:focus {
+  outline: none;
+}
+
+.formgroup-btn {
+  height: 28px;
+  width: 70px;
+  margin-left: 20px;
+  background-color: rgb(255, 234, 255);
+  border: 2px solid purple;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}

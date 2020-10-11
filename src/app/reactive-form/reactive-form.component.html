@@ -1,0 +1,10 @@
+<div class="row search-form">
+  <form [formGroup]="formGroupSearchForm" class="col-md-4">
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" class="name-input">
+    <button (click)="searchCharacter.emit(formGroupSearchForm.value)" class="formgroup-btn">Search</button>
+    <label for="species">Species</label>
+    <input type="text" formControlName="species"  class="species-input">
+    <button (click)="searchSpecies.emit(formGroupSearchForm.value)" class="formgroup-btn">Search</button>
+  </form>
+</div>

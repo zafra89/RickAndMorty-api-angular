@@ -1,0 +1,9 @@
+<h1 class="characters-title">Fav Characters</h1>
+<div class="divfather container">
+  <div class="row">
+    <div class="divson col-lg-4 col-md-6 col-sm-12" *ngFor="let character of favouriteCharacters">
+      <img class="imgcharacter" src="{{ character.image }}">
+      <h3>{{ character.name }}</h3>
+    </div>
+  </div>
+</div>
